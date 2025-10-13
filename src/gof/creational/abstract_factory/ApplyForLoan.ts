@@ -1,6 +1,4 @@
-import { SACInstallmentCalculator } from "./InstallmentCalculator";
 import InstallmentRepository from "./InstallmentRepository";
-import { MortgageLoan } from "./Loan";
 import LoanFactory from "./LoanFactory";
 import LoanRepository from "./LoanRepository";
 import RepositoryFactory from "./RepositoryFactory";

@@ -1,7 +1,7 @@
-import ApplyForLoan from "../../../gof/creational/abstract_factory/ApplyForLoan";
-import GetLoan from "../../../gof/creational/abstract_factory/GetLoan";
-import { MortgageLoanFactory } from "../../../gof/creational/abstract_factory/LoanFactory";
-import { RepositoryMemoryFactory } from "../../../gof/creational/abstract_factory/RepositoryFactory";
+import ApplyForLoan from "../../../src/gof/creational/abstract_factory/ApplyForLoan";
+import GetLoan from "../../../src/gof/creational/abstract_factory/GetLoan";
+import { MortgageLoanFactory } from "../../../src/gof/creational/abstract_factory/LoanFactory";
+import { RepositoryMemoryFactory } from "../../../src/gof/creational/abstract_factory/RepositoryFactory";
 
 test("Deve solicitar um financiamento imobiliario", async function () {
   const repositoryFactory = new RepositoryMemoryFactory();

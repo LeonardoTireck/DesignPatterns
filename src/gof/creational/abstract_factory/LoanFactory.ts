@@ -10,11 +10,7 @@ export default interface LoanFactory {
 }
 
 export class MortgageLoanFactory implements LoanFactory {
-  createLoan(
-    amount: number,
-    income: number,
-    installments: number,
-  ): MortgageLoan {
+  createLoan(amount: number, income: number, installments: number): Loan {
     return MortgageLoan.create(amount, income, installments);
   }
   createInstallmentCalculator(): InstallmentCalculator {
@@ -22,7 +18,7 @@ export class MortgageLoanFactory implements LoanFactory {
   }
 }
 export class CarLoanFactory implements LoanFactory {
-  createLoan(amount: number, income: number, installments: number): CarLoan {
+  createLoan(amount: number, income: number, installments: number): Loan {
     return CarLoan.create(amount, income, installments);
   }
   createInstallmentCalculator(): InstallmentCalculator {
