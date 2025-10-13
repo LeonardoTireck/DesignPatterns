@@ -1,0 +1,22 @@
+{
+  "name": "abstract_factory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.7.2",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.5"
+  },
+  "dependencies": {
+    "currency.js": "^2.0.4"
+  }
+}
