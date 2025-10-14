@@ -1,6 +1,5 @@
 import Location from "./Location";
 import RideRepository from "./RideRepository";
-import Segment from "./Segment";
 import SegmentRepository from "./SegmentRepository";
 
 export default class UpdateLocation {
@@ -12,7 +11,8 @@ export default class UpdateLocation {
   async execute(input: Input): Promise<void> {
     const ride = await this.rideRepository.getById(input.rideId);
     const newLocation = new Location(input.lat, input.long, input.date);
-    const segment = new Segment(ride.rideId, ride.lastLocation, newLocation);
+    // this is the main implementation of the GOF's factory method:
+    const segment = ride.createSegment(ride.lastLocation, newLocation);
     ride.updateLocation(newLocation);
     await this.rideRepository.update(ride);
     await this.segmentRepository.save(segment);
