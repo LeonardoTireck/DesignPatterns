@@ -3,7 +3,7 @@ import {
   DistanceRide,
   TimeRide,
 } from "../../../../src/gof/creational/factory_method/Ride";
-import Segment, {
+import {
   DistanceSegment,
   TimeSegment,
 } from "../../../../src/gof/creational/factory_method/Segment";
