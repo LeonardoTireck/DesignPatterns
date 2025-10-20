@@ -1,5 +1,10 @@
 import fs from "fs";
 
+// User the Flyweight design pattern when there is a large quantity of objects,
+// and it starts to use too much memory.
+// Get part of this object that repeats, extract it in a new object, and create some sort
+// of indexing on top of that, so you cache it and use it in a singleton fashion with a factory...
+
 export class LotteryTicket {
   constructor(
     readonly draw: DrawFlyweight,
