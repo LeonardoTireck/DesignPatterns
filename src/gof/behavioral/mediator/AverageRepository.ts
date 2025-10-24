@@ -1,6 +1,5 @@
-import Average from "./Average";
 import pgp from "pg-promise";
-import Grade from "./Grade";
+import Average from "./Average";
 
 export default interface AverageRepository {
   save(average: Average): Promise<void>;
