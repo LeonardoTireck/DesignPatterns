@@ -37,3 +37,13 @@ create table design_patterns.average (
     student_id integer,
     value numeric
 );
+
+
+-- Strategy Code:
+create table design_patterns.parking_ticket (
+    plate text,
+    checkin_date timestamp,
+    checkout_date timestamp,
+    fare numeric,
+    location text
+);
